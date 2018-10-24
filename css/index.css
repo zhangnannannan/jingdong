@@ -1,0 +1,135 @@
+html {font-size: 100px}
+html, body, .main, .swiper-container, .swiper-slide {  width: 100%;
+                   height: 100%;
+                    overflow: hidden;  }
+body{background: url("../images/bodyBg.jpg") no-repeat;background-size: 100% 100%}
+.arrow {
+    position: absolute;
+    left: 50%;
+    bottom: .2rem;
+    z-index: 999;
+    margin-left: -.42rem;
+    width: .85rem;
+    height: .83rem;
+    background: url("../images/arrow.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation: fadeInUp 1s .2s infinite ease both;
+    animation: fadeInUp 1s .2s infinite ease both;
+}
+.music {
+    display: none;
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    z-index: 10;
+    width: .6rem;
+    height: .6rem;
+    background: url("../audio/music.svg") no-repeat;
+    background-size: 100% 100%;
+}
+.music audio {
+    display: none;
+}
+.music.move {
+    -webkit-animation: musicMove 1s linear 0s infinite both;
+    animation: musicMove 1s linear 0s infinite both;
+}
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.page1 {background: url("../images/page1/bg1.jpg") no-repeat;background-size: 100% 100%;}
+.page1 .text{opacity:0;width:2.05rem;height:5.39rem;padding-top:.6rem;background: url("../images/page1/textBg.png") no-repeat;background-size:cover;position: absolute;top:.65rem;right:.65rem;}
+.page1 .text span{display: block;width:1.38rem;margin:0 auto;}
+.page1 span:nth-child(1){height:1.3rem;background: url("../images/page1/text01.png") no-repeat;background-size: cover}
+.page1 span:nth-child(2){height:1.1rem;background: url("../images/page1/text02.png") no-repeat;background-size:cover}
+.page1 span:nth-child(3){height:1.08rem;background: url("../images/page1/text03.png") no-repeat;background-size: cover}
+.page1 span:nth-child(4){height:1.2rem;background: url("../images/page1/text04.png") no-repeat;background-size:cover}
+.tuzhang{opacity:0;position:absolute;top:7rem;right:1.2rem;width:1.32rem;height:1.35rem;background: url("../images/page1/tuzhang.png") no-repeat;background-size: cover}
+
+#page1 .text{-webkit-animation: fadeIn 1s .2s ease both;-moz-animation: fadeIn 1s .2s ease both;}
+#page1 span:nth-child(1){-webkit-animation: fadeIn 1s .2s ease both;-moz-animation: fadeIn 1s .2s ease both;}
+#page1 span:nth-child(2){-webkit-animation: fadeIn 1s .6s ease both;-moz-animation: fadeIn 1s .6s ease both;}
+#page1 span:nth-child(3){-webkit-animation: fadeIn 1s 1s ease both;-moz-animation: fadeIn 1s 1s ease both;}
+#page1 span:nth-child(4){-webkit-animation: fadeIn 1s 1.4s ease both;-moz-animation: fadeIn 1s 1.4s ease both;}
+#page1 .tuzhang{-webkit-animation: tada 1s 1.8s ease both;-moz-animation: tada 1s 1.8s ease both;}
+
+
+.page2 {background: url("../images/page2/bg1.png") no-repeat;background-size: 100% 100%;}
+.page2 .bg{width: 100%;height:100%;background: url("../images/page2/bg2.png") no-repeat;background-size: 100% 100%}
+.page2 .text1{top:1.2rem;right:.8rem;position: absolute;}
+.page2 .text1 span{opacity:0;width: .56rem;height:2.83rem;float: right;}
+.page2 .text1 span:nth-child(1){background: url("../images/page2/text01.png") no-repeat;background-size: 100% 100%}
+.page2 .text1 span:nth-child(2){background: url("../images/page2/text02.png") no-repeat;background-size: 100% 100%}
+.page2 .text2{top:1.2rem;right:2.5rem;position: absolute;}
+.page2 .text2 span{opacity:0;float:right;width: .36rem;height:5.78rem;margin-left:.35rem;}
+.page2 .text2 span:nth-child(1){background: url("../images/page2/text03.png") no-repeat;background-size: 100% 100%}
+.page2 .text2 span:nth-child(2){background: url("../images/page2/text04.png") no-repeat;background-size: 100% 100%}
+.page2 .text2 span:nth-child(3){background: url("../images/page2/text05.png") no-repeat;background-size: 100% 100%}
+.page2 .text2 span:nth-child(4){background: url("../images/page2/text06.png") no-repeat;background-size: 100% 100%}
+.page2 .hand{position:absolute;bottom:.5rem;left:.5rem;width:2.08rem;height:2.44rem;background: url("../images/page2/hand.png") no-repeat;background-size: 100% 100%}
+.page2 .knife{position:absolute;bottom:1rem;left:.8rem;width:2.4rem;height:1.25rem;background: url("../images/page2/knife.png") no-repeat;background-size: 100% 100%}
+
+#page2 .text1 span:nth-child(1){-webkit-animation: bounceInRight 1s ease 1s both;animation: bounceInRight 1s ease 1s both;}
+#page2 .text1 span:nth-child(2){-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both;}
+#page2 .hand{-webkit-animation: fadeIn 1s .4s ease both;-moz-animation: fadeIn 1s .4s ease both;}
+#page2 .knife{-webkit-animation: knife 2s .6s ease infinite both;-moz-animation: knife 2s .6s ease infinite  both;transform-origin: right bottom}
+#page2 .text2 span:nth-child(1){-webkit-animation: bounceInDown 1s ease 3s both;animation: bounceInDown 1s ease 3s both;}
+#page2 .text2 span:nth-child(2){-webkit-animation: bounceInDown 1s ease 4s both;animation: bounceInDown 1s ease 4s both;}
+#page2 .text2 span:nth-child(3){-webkit-animation: bounceInDown 1s ease 5s both;animation: bounceInDown 1s ease 5s both;}
+#page2 .text2 span:nth-child(4){-webkit-animation: bounceInDown 1s ease 6s both;animation: bounceInDown 1s ease 6s both;}
+@-webkit-keyframes knife {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(30deg)}
+}
+@keyframes knife {
+    0%,100%{transform: rotate(0deg)}
+    50%{transform: rotate(15deg)}
+}
+
+
+
+.page3{background: url("../images/page3/bg1.png") no-repeat;background-size: 100% 100%;}
+.page3 .bg{width: 100%;height:100%;background: url("../images/page3/bg2.png") no-repeat;background-size: 100% 100%}
+.page3 .quan{opacity:0;position:absolute;left:50%;top:1.5rem;margin-left:-2.78rem;width:5.56rem;height:5.74rem;background: url("../images/page3/circle.png") no-repeat;background-size: 100% 100%}
+.page3 .txt{opacity:0;z-index:999;position:absolute;left:50%;top:2.5rem;margin-left:-1.73rem;width:3.45rem;height:3.45rem;background: url("../images/page3/text.png") no-repeat;background-size: 100% 100%}
+.page3 .renwu{position: absolute;height:3rem;top:1.5rem;left:50%;margin-left:-1.73rem;width: 3.45rem;}
+.page3 .ren1{opacity:0;position:absolute;top:0;right:0;width:1.8rem;height:3rem;background: url("../images/page3/renwu01.png") no-repeat;background-size: 100% 100%}
+.page3 .ren2{opacity:0;position:absolute;top:-.6rem;left:50%;margin-left:-.9rem;width:1.8rem;height:3rem;background: url("../images/page3/renwu02.png") no-repeat;background-size: 100% 100%}
+.page3 .ren3{opacity:0;position:absolute;top:0;left:0;width:1.8rem;height:3rem;background: url("../images/page3/renwu03.png") no-repeat;background-size: 100% 100%}
+.page3 .ren4{opacity:0;position:absolute;top:0;left:50%;margin-left:-.9rem;width:1.8rem;height:3rem;background: url("../images/page3/renwu04.png") no-repeat;background-size: 100% 100%}
+.page3 .btns{opacity:0;position: absolute;left:0;right:0;margin:auto;bottom:.6rem;width:5.02rem;height:1.8rem;background: url("../images/page3/btns.png") no-repeat;background-size: 100% 100%}
+
+
+#page3 .quan{-webkit-animation: rotate .6s  1s ease both ;animation: rotate .6s  1s ease both}
+#page3 .txt{-webkit-animation: fadeIn 1s  1s ease both ;animation: fadeIn 1s  1s ease both}
+#page3 .ren1{-webkit-animation: bounceInDown 1s 2s ease both ;animation: bounceInDown 1s  2s ease both}
+#page3 .ren2{-webkit-animation: bounceInDown 1s 3s ease both ;animation: bounceInDown 1s  3s ease both}
+#page3 .ren3{-webkit-animation: bounceInDown 1s 4s ease both ;animation: bounceInDown 1s  4s ease both}
+#page3 .ren4{-webkit-animation: bounceInDown 1s 5s ease both ;animation: bounceInDown 1s  5s ease both}
+#page3 .btns{-webkit-animation: fadeIn 1s  1s ease both ;animation: fadeIn 1s  1s ease both}
+@-webkit-keyframes rotate {
+    0%{transform: rotate(0deg)}
+    100%{opacity:1;transform: rotate(360deg)}
+}
+@keyframes retate {
+    0%{transform: rotate(0deg)}
+    100%{opacity:1;transform: rotate(360deg)}
+}
+
